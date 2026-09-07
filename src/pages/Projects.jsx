@@ -15,7 +15,12 @@ import photo1 from "../assets/images/projects/mbugangari/photo1.png";
 import photo2 from "../assets/images/projects/mbugangari/photo2.png";
 import photo3 from "../assets/images/projects/mbugangari/photo3.png";
 import photo4 from "../assets/images/projects/mbugangari/photo4.png";
-
+import photo6 from "../assets/images/projects/mbugangari/photo6.jpeg";
+import photo5 from "../assets/images/projects/mbugangari/photo5.jpeg";
+import photo8 from "../assets/images/projects/mbugangari/photo8.jpeg";
+import photo7 from "../assets/images/projects/mbugangari/photo7.jpeg";
+import photo9 from "../assets/images/projects/mbugangari/photo9.jpeg";
+import photo10 from "../assets/images/projects/mbugangari/photo10.jpeg";
 function Projects() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -40,6 +45,30 @@ function Projects() {
     {
       image: photo4,
       title: "Architectural Detail",
+    },
+       {
+      image: photo6,
+      title: "G+2 apartment in kigali city",
+    },
+       {
+      image: photo5,
+      title: "Modern construction of G+2 in kabeza",
+    },
+       {
+      image: photo7,
+      title: "",
+    },
+       {
+      image: photo8,
+      title: "Front View",
+    },
+       {
+      image: photo9,
+      title: "Building Progress located in kabeza",
+    },
+       {
+      image: photo10,
+      title: "New apartment in kigali city - kabeza",
     },
   ];
 
