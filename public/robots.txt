@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wpdltd.vercel.app/sitemap.xml
