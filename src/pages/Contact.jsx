@@ -128,8 +128,8 @@ function Contact() {
 
               <div>
                 <span>EMAIL</span>
-                <a href="mailto:wpdltd2026@gmail.com">
-                  wpdltd2026@gmail.com
+                <a href="mailto:wpdest2026@gmail.com">
+                  wpdest2026@gmail.com
                 </a>
               </div>
             </div>
@@ -163,7 +163,7 @@ function Contact() {
                 <label>Email Address</label>
                 <input
                   type="email"
-                  placeholder="wpdltd2026.com"
+                  placeholder="wpdest2026.com"
                 />
               </div>
             </div>
@@ -204,7 +204,7 @@ function Contact() {
           <em>Our expertise.</em>
         </h2>
 
-        <a href="mailto:wpdltd2026@gmail.com" className="cta-button">
+        <a href="mailto:wpdest2026@gmail.com" className="cta-button">
           Email WPD
           <ArrowUpRight size={20} />
         </a>
@@ -218,7 +218,7 @@ function Contact() {
 
         <div className="footer-links">
           <a href="/">Home</a>
-          <a href="/#about">About</a>
+          <a href="/about">About</a>
           <a href="/services">Services</a>
           <a href="/projects">Projects</a>
           <a href="/contact">Contact</a>

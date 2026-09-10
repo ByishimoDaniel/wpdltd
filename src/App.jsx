@@ -2,6 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
+import FinishedProjects from "./pages/FinishedProjects.jsx";
+import OngoingProjects from "./pages/OngoingProjects.jsx";
+import OnSaleProjects from "./pages/OnSaleProjects.jsx";
+
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import About from "./pages/About.jsx";
@@ -9,20 +13,34 @@ import About from "./pages/About.jsx";
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
 
         <Route path="/" element={<Home />} />
 
         <Route path="/projects" element={<Projects />} />
 
+        <Route
+          path="/finished-projects"
+          element={<FinishedProjects />}
+        />
+
+        <Route
+          path="/ongoing-projects"
+          element={<OngoingProjects />}
+        />
+
+        <Route
+          path="/projects-on-sale"
+          element={<OnSaleProjects />}
+        />
+
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/services" element={<Services />} />
+
         <Route path="/about" element={<About />} />
 
       </Routes>
-
     </BrowserRouter>
   );
 }
