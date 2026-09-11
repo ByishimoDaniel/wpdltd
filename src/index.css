@@ -5030,7 +5030,7 @@ footer > p {
 .projects-nav-links a {
   position: relative;
 
-  color: #0f0f0f;
+  color: #cc8706;
   text-decoration: none;
 
   font-size: 14px;
@@ -5059,7 +5059,7 @@ footer > p {
   width: 100%;
   height: 2px;
 
-  background: #111;
+  background: #f8f4f4;
 }
 
 
@@ -5071,7 +5071,7 @@ footer > p {
   border: none;
   background: transparent;
 
-  color: #111;
+  color: #3f3603111;
 
   cursor: pointer;
 
@@ -5282,7 +5282,7 @@ footer > p {
 
   background: transparent;
 
-  color: #111;
+  color: #cf9007;
   cursor: pointer;
 
   -webkit-tap-highlight-color: transparent;
@@ -5385,7 +5385,7 @@ footer > p {
 .wpd-nav-link {
   position: relative;
 
-  color: #111111;
+  color: #c07116;
   text-decoration: none;
 
   font-size: 15px;
@@ -5427,7 +5427,7 @@ footer > p {
   padding: 10px 20px;
 
   background: #111111;
-  color: #ffffff !important;
+  color: #e78f0b !important;
 
   border-radius: 6px;
 
@@ -5462,7 +5462,7 @@ footer > p {
   outline: none;
 
   background: transparent;
-  color: #111111;
+  color: #e7a30e;
 
   cursor: pointer;
 
@@ -5524,7 +5524,7 @@ footer > p {
     height: 42px;
 
     background: transparent;
-    color: #111111;
+    color: #e4b20f;
   }
 
   .projects-menu-button svg,
