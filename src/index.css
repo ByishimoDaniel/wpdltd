@@ -5325,9 +5325,317 @@ footer > p {
     stroke: #111;
   }
 }
-.projects-menu-button svg {
+/* ================================
+   GLOBAL WPD NAVBAR
+================================ */
+
+.projects-navbar,
+.wpd-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  z-index: 9999;
+
+  box-sizing: border-box;
+}
+
+/* ================================
+   LOGO
+================================ */
+
+.projects-logo,
+.wpd-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projects-logo img,
+.wpd-logo img {
+  width: 78px;
+  height: auto;
+  display: block;
+}
+
+/* ================================
+   NAVIGATION LINKS
+================================ */
+
+.projects-nav-links,
+.wpd-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.projects-nav-links a,
+.wpd-nav-menu a,
+.wpd-nav-link {
+  position: relative;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: color 0.25s ease;
+}
+
+/* Hover underline */
+
+.projects-nav-links a::after,
+.wpd-nav-menu a::after,
+.wpd-nav-link::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #111111;
+
+  transition: width 0.25s ease;
+}
+
+.projects-nav-links a:hover::after,
+.wpd-nav-menu a:hover::after,
+.wpd-nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   CONTACT BUTTON
+================================ */
+
+.wpd-nav-contact {
+  padding: 10px 20px;
+
+  background: #111111;
+  color: #ffffff !important;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+}
+
+.wpd-nav-contact::after {
+  display: none !important;
+}
+
+.wpd-nav-contact:hover {
+  background: #333333;
+}
+
+/* ================================
+   HAMBURGER BUTTON
+================================ */
+
+.projects-menu-button,
+.wpd-menu-button {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: #111111;
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Lucide icon */
+
+.projects-menu-button svg,
+.wpd-menu-button svg {
   width: 27px;
   height: 27px;
-  stroke: #111;
-  stroke-width: 2.5;
+
+  stroke: #111111;
+  stroke-width: 2.3;
+
+  transition: transform 0.25s ease;
+}
+
+.projects-menu-button:hover svg,
+.wpd-menu-button:hover svg {
+  transform: scale(1.08);
+}
+
+/* ================================
+   PAGE TOP SPACE
+================================ */
+
+.projects-page {
+  padding-top: 0;
+}
+
+/* ================================
+   MOBILE NAVBAR
+================================ */
+
+@media (max-width: 768px) {
+
+  .projects-navbar,
+  .wpd-navbar {
+    height: 72px;
+    padding: 0 5%;
+
+    background: #ffffff;
+  }
+
+  .projects-logo img,
+  .wpd-logo img {
+    width: 68px;
+  }
+
+  /* Show hamburger */
+
+  .projects-menu-button,
+  .wpd-menu-button {
+    display: flex;
+
+    width: 42px;
+    height: 42px;
+
+    background: transparent;
+    color: #111111;
+  }
+
+  .projects-menu-button svg,
+  .wpd-menu-button svg {
+    width: 26px;
+    height: 26px;
+
+    stroke: #111111;
+    stroke-width: 2.4;
+  }
+
+  /* Mobile dropdown */
+
+  .projects-nav-links,
+  .wpd-nav-menu {
+    position: absolute;
+
+    top: 72px;
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0;
+
+    padding: 15px 0 20px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    z-index: 9998;
+  }
+
+  /* When hamburger is clicked */
+
+  .projects-nav-links.open,
+  .wpd-nav-menu.open {
+    display: flex;
+  }
+
+  /* Mobile links */
+
+  .projects-nav-links a,
+  .wpd-nav-menu a,
+  .wpd-nav-link {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    text-align: center;
+
+    font-size: 16px;
+  }
+
+  /* Remove underline animation on mobile */
+
+  .projects-nav-links a::after,
+  .wpd-nav-menu a::after,
+  .wpd-nav-link::after {
+    display: none;
+  }
+
+  /* Mobile contact button */
+
+  .wpd-nav-contact {
+    width: auto !important;
+
+    margin-top: 8px;
+
+    padding: 11px 24px !important;
+  }
+}
+
+/* ================================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 480px) {
+
+  .projects-navbar,
+  .wpd-navbar {
+    height: 68px;
+    padding: 0 4%;
+  }
+
+  .projects-logo img,
+  .wpd-logo img {
+    width: 62px;
+  }
+
+  .projects-menu-button,
+  .wpd-menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projects-menu-button svg,
+  .wpd-menu-button svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .projects-nav-links,
+  .wpd-nav-menu {
+    top: 68px;
+  }
 }
