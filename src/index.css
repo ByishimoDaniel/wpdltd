@@ -5280,7 +5280,7 @@ footer > p {
   border: none;
   outline: none;
 
-  background: transparent;
+  background: white;
 
   color: #cf9007;
   cursor: pointer;
@@ -5314,15 +5314,15 @@ footer > p {
     width: 42px;
     height: 42px;
 
-    color: #111;
-    background: transparent;
+    color: #ca880c;
+    background: black;
   }
 
   .projects-menu-button svg {
     width: 26px;
     height: 26px;
 
-    stroke: #111;
+    stroke: #524545;
   }
 }
 /* ================================
@@ -5426,7 +5426,7 @@ footer > p {
 .wpd-nav-contact {
   padding: 10px 20px;
 
-  background: #111111;
+  background: #fdfcfc;
   color: #e78f0b !important;
 
   border-radius: 6px;
@@ -5439,7 +5439,7 @@ footer > p {
 }
 
 .wpd-nav-contact:hover {
-  background: #333333;
+  background: #0a0a0a;
 }
 
 /* ================================
@@ -5523,7 +5523,7 @@ footer > p {
     width: 42px;
     height: 42px;
 
-    background: transparent;
+    background: white;
     color: #e4b20f;
   }
 
