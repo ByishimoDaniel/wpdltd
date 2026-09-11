@@ -636,7 +636,7 @@ function Services() {
 
           <a href="mailto:wpdltd2026@gmail.com">
             <Mail size={18} />
-            wpdltd2026@gmail.com
+            wpdest2026@gmail.com
           </a>
 
         </div>
@@ -691,9 +691,9 @@ function Services() {
             0786 200 854
           </a>
 
-          <a href="mailto:wpdltd2026@gmail.com">
+          <a href="mailto:wpdest2026@gmail.com">
             <Mail size={15} />
-            wpdltd2026@gmail.com
+            wpdest2026@gmail.com
           </a>
 
         </div>
