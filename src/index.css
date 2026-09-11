@@ -1921,7 +1921,7 @@ footer > p {
 
   line-height: 1.8;
 
-  color: #aaa;
+  color: #f5f1f1;
 }
 
 .about-checks {
@@ -1945,7 +1945,7 @@ footer > p {
 }
 
 .about-checks svg {
-  color: #aaa;
+  color: #ffffff;
 }
 
 
@@ -1958,7 +1958,7 @@ footer > p {
 
   padding: 80px 5%;
 
-  background: #f5f4f0;
+  background: #fffefe;
 
   border-bottom: 1px solid #ddd;
 }
@@ -1992,7 +1992,7 @@ footer > p {
 
   letter-spacing: 2px;
 
-  color: #777;
+  color: #000000;
 }
 
 
@@ -5262,3 +5262,72 @@ footer > p {
 
 }
 
+/* =========================
+   MOBILE HAMBURGER
+   ========================= */
+
+.projects-menu-button {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111;
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+
+  transition: transform 0.25s ease;
+}
+
+.projects-menu-button:hover {
+  transform: scale(1.05);
+}
+
+.projects-menu-button svg {
+  width: 27px;
+  height: 27px;
+
+  stroke: #111;
+  stroke-width: 2;
+
+  transition: transform 0.25s ease;
+}
+
+/* Phone */
+
+@media (max-width: 768px) {
+
+  .projects-menu-button {
+    display: flex;
+
+    width: 42px;
+    height: 42px;
+
+    color: #111;
+    background: transparent;
+  }
+
+  .projects-menu-button svg {
+    width: 26px;
+    height: 26px;
+
+    stroke: #111;
+  }
+}
+.projects-menu-button svg {
+  width: 27px;
+  height: 27px;
+  stroke: #111;
+  stroke-width: 2.5;
+}
